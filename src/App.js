@@ -1,20 +1,23 @@
 import React from "react";
-import logo from "./logo.svg";
-import Banner from "./components/Banner/Banner";
-import { Switch, Route } from "react-router-dom";
-import TodoPage from "./pages/TodoPage/TodoPage";
-import FollowersPage from "./pages/FollowersPage/FollowersPage";
-import "./App.css";
+import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
+import { MainContaner } from "./components/MainContaner";
+import { Route, Switch } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { NotFoundPage } from "./pages/NotFoundPage";
+import { ProductPage } from "./pages/ProductPage";
 
 function App() {
   return (
-    <div className="App">
-      <Banner />
+    <MainContaner>
+      <NavBar />
       <Switch>
-        <Route strict exact path="/" component={TodoPage} />
-        <Route strict exact path="/followers" component={FollowersPage} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/123" component={ProductPage} />
+        <Route component={NotFoundPage} />
       </Switch>
-    </div>
+      <Footer />
+    </MainContaner>
   );
 }
 

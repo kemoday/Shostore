@@ -1,6 +1,5 @@
 {
-  "name": "polls-react-app",
-  "homepage": "http://kemoday.github.io/polls-react-app",
+  "name": "shostore",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
