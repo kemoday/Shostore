@@ -6,6 +6,8 @@ import { Route, Switch } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { ProductPage } from "./pages/ProductPage";
+import { CartPage } from "./pages/CartPage";
+import { FavouritePage } from "./pages/FavouritePage";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/123" component={ProductPage} />
+        <Route exact path="/cart" component={CartPage} />
+        <Route exact path="/favourite" component={FavouritePage} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />
