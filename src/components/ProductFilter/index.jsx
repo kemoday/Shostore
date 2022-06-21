@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ProductFilter = () => {
+export const ProductFilter = ({ products, setProducts }) => {
   return (
     <nav id="store" className="w-full z-30 top-0 px-6 py-1">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
