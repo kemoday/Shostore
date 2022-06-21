@@ -20,7 +20,7 @@ export const Product = ({
           </p>
           {favorite ? (
             <svg
-              className="h-6 w-6 fill-current text-red-500 hover:text-black"
+              className="h-6 w-6 fill-current hover:text-black"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="2.027 3.037 19.945 17.994"
             >
