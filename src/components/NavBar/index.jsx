@@ -66,7 +66,7 @@ export const NavBar = () => {
         <div className="order-2 md:order-3 flex items-center" id="nav-content">
           <a className="inline-block no-underline hover:text-black" href="/">
             <svg
-              className="h-6 w-6 fill-current hover:text-black"
+              className="h-6 w-6 fill-current hover:text-purple-600"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="2.027 3.037 19.945 17.994"
             >
