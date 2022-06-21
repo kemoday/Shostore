@@ -46,9 +46,10 @@ export const NavBar = () => {
         </div>
 
         <div className="order-1 md:order-2">
-        <Link
+          <Link
             className="flex items-center tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl "
-            to="/">
+            to="/"
+          >
             <svg
               className="fill-current text-gray-800 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -65,14 +66,11 @@ export const NavBar = () => {
         <div className="order-2 md:order-3 flex items-center" id="nav-content">
           <a className="inline-block no-underline hover:text-black" href="/">
             <svg
-              className="fill-current hover:text-black"
+              className="h-6 w-6 fill-current hover:text-black"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+              viewBox="2.027 3.037 19.945 17.994"
             >
-              <circle fill="none" cx="12" cy="7" r="3" />
-              <path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" />
+              <path d="M12 4.595 C 10.896 3.589 9.488 3.037 8.004 3.037 C 6.426 3.037 4.932 3.66 3.791 4.795 C 1.438 7.158 1.439 10.854 3.793 13.207 L 11.125 20.539 C 11.295 20.838 11.623 21.031 12 21.031 C 12.322 21.031 12.609 20.868 12.792 20.622 L 20.207 13.207 C 22.561 10.853 22.561 7.158 20.205 4.791 C 19.068 3.66 17.574 3.037 15.996 3.037 C 14.513 3.037 13.104 3.589 12 4.595 Z"></path>
             </svg>
           </a>
 
