@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AddToCartBtn } from "./../../components/AddToCartBtn";
 import img1 from "../../assets/vapor-cage-t(1).png";
 import img2 from "../../assets/vapor-cage-t(2).png";
@@ -10,7 +10,6 @@ import { FavouriteBtn } from "../../components/FavouriteBtn";
 
 export const ProductPage = () => {
   const fimg = useRef();
-
   const [product, setProduct] = useState({
     name: " Anova Precision Cooker Nano",
     rating: 5,
@@ -32,6 +31,9 @@ export const ProductPage = () => {
     sizes: ["UK 6", "UK 6.5", "UK 7", "UK 7.5"],
     images: [img1, img2, img3, img4, img5, img6],
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleChangeImage = (e) => {
     fimg.current.src = e.target.src;
