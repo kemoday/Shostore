@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AddToCartBtn } from "../AddToCartBtn/";
 
 export const Product = ({
@@ -8,7 +9,7 @@ export const Product = ({
 }) => {
   return (
     <div className="w-full bg-white p-6 flex flex-col rounded-md border border-solid border-gray-300 basis-1/4">
-      <a href="/">
+      <Link to="/123">
         <img
           alt={name}
           className="hover:grow hover:shadow-lg rounded-md"
@@ -40,7 +41,7 @@ export const Product = ({
           <p className="pt-1 text-gray-900 font-bold flex-1">{price}</p>
           <AddToCartBtn />
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
