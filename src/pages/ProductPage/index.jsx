@@ -13,6 +13,7 @@ export const ProductPage = () => {
   const [product, setProduct] = useState({
     name: " Anova Precision Cooker Nano",
     rating: 5,
+    stoke: 5,
     reviews: [{}, {}, {}, {}, {}, {}, {}, {}, {}],
     question: [{}],
     price: "$129.99",
@@ -110,7 +111,7 @@ export const ProductPage = () => {
             ))}
           </ul>
           <section className="flex justify-between flex-col">
-            <AddToCartBtn />
+            <AddToCartBtn stoke={product.stoke} />
             <FavouriteBtn />
           </section>
         </main>

@@ -6,10 +6,11 @@ export const Product = ({
   name = "Product Name",
   price = "£9.99",
   favorite = true,
+  stoke = 5,
 }) => {
   return (
-    <div className="w-full bg-white p-6 flex flex-col rounded-md border border-solid border-gray-300 basis-1/4">
-      <Link to="/123">
+    <div className="w-full p-6 flex flex-col rounded-md shadow basis-1/4">
+      <Link to="/product/123">
         <img
           alt={name}
           className="hover:grow hover:shadow-lg rounded-md"
@@ -39,7 +40,7 @@ export const Product = ({
         </div>
         <div className="pt-3 flex items-center justify-between">
           <p className="pt-1 text-gray-900 font-bold flex-1">{price}</p>
-          <AddToCartBtn />
+          <AddToCartBtn stoke={stoke} />
         </div>
       </Link>
     </div>
