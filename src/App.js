@@ -13,19 +13,25 @@ import { RegisterPage } from "./pages/RegisterPage";
 
 function App() {
   return (
-    <MainContaner>
-      <NavBar />
+    <React.Fragment>
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/add" component={AddProductPage} />
-        <Route exact path="/register" component={RegisterPage} />
-        <Route exact path="/123" component={ProductPage} />
-        <Route exact path="/cart" component={CartPage} />
-        <Route exact path="/favourite" component={FavouritePage} />
-        <Route component={NotFoundPage} />
+        <Route path="/user" component={RegisterPage} />
+        <Route path="/">
+          <MainContaner>
+            <NavBar />
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/product/add/" component={AddProductPage} />
+              <Route path="/product/:id" component={ProductPage} />
+              <Route path="/products/cart" component={CartPage} />
+              <Route path="/products/favourite" component={FavouritePage} />
+              <Route component={NotFoundPage} />
+            </Switch>
+            <Footer />
+          </MainContaner>
+        </Route>
       </Switch>
-      <Footer />
-    </MainContaner>
+    </React.Fragment>
   );
 }
 
