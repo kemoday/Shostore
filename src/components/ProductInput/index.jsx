@@ -2,18 +2,19 @@ import React from "react";
 
 export const ProductInput = (porps) => {
   const { label, ...rest } = porps;
+
   return (
-    <div className="mb-6 pt-3 rounded bg-gray-200">
+    <div className="flex flex-col pt-4">
       <label
         className="block text-gray-700 text-sm font-bold mb-2 ml-3"
-        for="email"
+        HtmlFor={rest.name}
       >
         {label}
       </label>
       <input
         {...rest}
         id={rest.name}
-        className="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
       />
     </div>
   );
