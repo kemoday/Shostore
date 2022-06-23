@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Input } from "../../components/RegisterInput";
-import { PrimaryBtn } from "../../components/PrimaryBtn";
-import { ProductInput } from "../../components/ProductInput";
+import { InnerContaner } from "../../components/InnerContaner";
+import { Route, Switch } from "react-router-dom";
+import { StepOne } from "./StepOne";
+import { StepTwo } from "./StepTwo";
+import { StepThree } from "./StepThree";
 
 export const AddProductPage = () => {
   const [data, setData] = useState({
@@ -19,25 +21,22 @@ export const AddProductPage = () => {
   };
 
   return (
-    <div className="container w-full md:w-4/5 xl:w-3/5 mx-auto px-2">
-      <h1 className="flex items-center font-sans font-bold break-normal px-2 py-8 text-4xl">
-        New Product
-      </h1>
-
-      <div id="recipients" className="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
-        <section className="text-right mt-4">
-          <form onSubmit={handleSubmit}>
-            <ProductInput
-              name="email"
-              type="email"
-              label="Email"
-              onChange={handleChange}
-              value={data.email}
-            />
-            <PrimaryBtn text="Add Product" />
-          </form>
-        </section>
+    <InnerContaner>
+      <div className="container w-full md:w-4/5 xl:w-3/5 mx-auto px-2">
+        <h1 className="flex items-center font-sans font-bold break-normal px-2 py-8 text-4xl">
+          New Product
+        </h1>
+        <div className="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+          <section className="mt-4">
+            <Switch>
+              <Route path="/step-one" component={StepOne} />
+              <Route path="/step-two" component={StepTwo} />
+              <Route path="/step-three" component={StepThree} />
+            </Switch>
+            <StepOne />
+          </section>
+        </div>
       </div>
-    </div>
+    </InnerContaner>
   );
 };
