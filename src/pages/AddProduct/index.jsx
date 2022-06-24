@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { InnerContaner } from "../../components/InnerContaner";
 import { Route, Switch } from "react-router-dom";
+import { InnerContaner } from "../../components/InnerContaner";
 import { StepOne } from "./StepOne";
-import { StepTwo } from "./StepTwo";
 import { StepThree } from "./StepThree";
+import { StepTwo } from "./StepTwo";
 
 export const AddProductPage = () => {
   const [data, setData] = useState({
@@ -27,14 +27,11 @@ export const AddProductPage = () => {
           New Product
         </h1>
         <div className="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
-          <section className="mt-4">
-            <Switch>
-              <Route path="/step-one" component={StepOne} />
-              <Route path="/step-two" component={StepTwo} />
-              <Route path="/step-three" component={StepThree} />
-            </Switch>
-            <StepOne />
-          </section>
+          <Switch>
+            <Route path="/product/add/step-one" component={StepOne} />
+            <Route path="/product/add/step-two" component={StepTwo} />
+            <Route path="/product/add/step-three" component={StepThree} />
+          </Switch>
         </div>
       </div>
     </InnerContaner>
