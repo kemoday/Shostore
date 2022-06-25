@@ -1,21 +1,28 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import { InnerContaner } from "../../components/InnerContaner";
+import { ProgressBar } from "./ProgressBar";
 import { StepOne } from "./StepOne";
 import { StepThree } from "./StepThree";
 import { StepTwo } from "./StepTwo";
 
 export const AddProductPage = () => {
   const [data, setData] = useState({
-    email: "",
-    password: "",
+    name: "",
+    sizes: "",
+    price: "",
+    featurers: "",
+    description: "",
   });
+  const [step, setStep] = useState(1);
 
-  const handleChange = (e) => {
-    setData({ [e.target.name]: e.target.value });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
   };
-
-  const handleSubmit = (e) => {
+  const handlePublish = (e: React.SyntheticEvent) => {
     e.preventDefault();
     console.log("submited!");
   };
@@ -27,8 +34,12 @@ export const AddProductPage = () => {
           New Product
         </h1>
         <div className="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+          <ProgressBar step={step} setStep={setStep} />
           <Switch>
-            <Route path="/product/add/step-one" component={StepOne} />
+            <Route
+              path="/product/add/step-one"
+              render={() => <StepOne handleChange={handleChange} data={data} />}
+            />
             <Route path="/product/add/step-two" component={StepTwo} />
             <Route path="/product/add/step-three" component={StepThree} />
           </Switch>
