@@ -16,15 +16,16 @@ export const ProductInput: React.FC<Props> = (porps) => {
   return (
     <div className="flex flex-col pt-4">
       <label
-        className="block text-gray-700 text-sm font-bold mb-2 ml-3"
+        className="block text-gray-700 font-bold mb-2 text-lg"
         htmlFor={name}
       >
         {label}
+        {rest.required && <span className="text-red-500">*</span>}
       </label>
       <input
         {...rest}
         id={name}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
+        className="shadow appearance-none focus:border-purple-600 border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
       />
     </div>
   );
