@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 interface Props {
   step: number;
@@ -9,10 +9,10 @@ interface Props {
 export const ProgressBar: React.FC<Props> = ({ step = 1, setStep }) => (
   <ul className="flex basis-1/3">
     <li>
-      <Link
-        to="/product/add/step-one"
-        onClick={() => setStep(1)}
-        className={`p-2 pl-0 ${step === 1 && "font-bold"}`}
+      <NavLink
+        to="/product/add/step/1"
+        activeClassName="p-2 pl-0 font-bold"
+        className="p-2 pl-0"
       >
         <span
           id="step"
@@ -21,13 +21,13 @@ export const ProgressBar: React.FC<Props> = ({ step = 1, setStep }) => (
           1
         </span>
         <span className="text-lg ">Basic Info</span>
-      </Link>
+      </NavLink>
     </li>
     <li>
-      <Link
-        to="/product/add/step-two"
-        onClick={() => setStep(2)}
-        className={`p-2 pl-0 ${step === 2 && "font-bold"}`}
+      <NavLink
+        to="/product/add/step/2"
+        activeClassName="p-2 pl-0 font-bold"
+        className="p-2 pl-0"
       >
         <span
           id="step"
@@ -36,13 +36,13 @@ export const ProgressBar: React.FC<Props> = ({ step = 1, setStep }) => (
           2
         </span>
         <span className="text-lg ">Images</span>
-      </Link>
+      </NavLink>
     </li>
     <li>
-      <Link
-        to="/product/add/step-three"
-        onClick={() => setStep(3)}
-        className={`p-2 pl-0 ${step === 3 && "font-bold"}`}
+      <NavLink
+        to="/product/add/step/3"
+        activeClassName="p-2 pl-0 font-bold"
+        className="p-2 pl-0"
       >
         <span
           id="step"
@@ -51,7 +51,7 @@ export const ProgressBar: React.FC<Props> = ({ step = 1, setStep }) => (
           3
         </span>
         <span className="text-lg ">Review</span>
-      </Link>
+      </NavLink>
     </li>
   </ul>
 );
