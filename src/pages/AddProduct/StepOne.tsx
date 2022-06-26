@@ -1,9 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { PrimaryBtn } from "../../components/PrimaryBtn";
+import { PaginationBtns } from "../../components/PaginationBtns";
 import { ProductInput } from "../../components/ProductInput";
 import { ProductTextarea } from "../../components/ProductTextarea";
-import { SecondaryBtn } from "../../components/SecondaryBtn";
 
 interface data {
   name: string;
@@ -21,11 +20,19 @@ interface Props {
 }
 
 export const StepOne: React.FC<Props> = ({ handleChange, data }) => {
+  const formRef = React.createRef<HTMLFormElement>();
   const history = useHistory();
+
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+    if (data.name && data.description && data.price) {
+      history.push("/product/add/step/2");
+    }
+  };
 
   return (
     <section className="px-4">
-      <form className="flex flex-col pt-3">
+      <form className="flex flex-col pt-3" ref={formRef}>
         <ProductInput
           placeholder="Nike Shose"
           name="name"
@@ -71,13 +78,7 @@ export const StepOne: React.FC<Props> = ({ handleChange, data }) => {
           onChange={handleChange}
         />
 
-        <div className="flex justify-between basis-1/3 mt-8">
-          <SecondaryBtn text="< Back" onClick={() => history.goBack()} />
-          <PrimaryBtn
-            text="Next >"
-            onClick={() => history.push("/product/add/step-two")}
-          />
-        </div>
+        <PaginationBtns handleSubmit={handleSubmit} />
       </form>
     </section>
   );
