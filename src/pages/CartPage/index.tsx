@@ -33,64 +33,44 @@ export const CartPage = () => {
           <tbody>
             <tr className="border-b">
               <td>
-                <img
-                  className="rounded-full  w-20 h-20 m-4"
-                  src={img}
-                  alt=""
-                  srcset=""
-                />
+                <img className="rounded-full  w-20 h-20 m-4" src={img} alt="" />
               </td>
               <td>Shose 1</td>
               <td>
-                <AddToCartBtn />
+                <AddToCartBtn stoke={5} />
               </td>
               <td>$999</td>
             </tr>
 
             <tr className="border-b">
               <td>
-                <img
-                  className="rounded-full  w-20 h-20 m-4"
-                  src={img}
-                  alt=""
-                  srcset=""
-                />
+                <img className="rounded-full  w-20 h-20 m-4" src={img} alt="" />
               </td>
               <td>Shose 1</td>
               <td>
-                <AddToCartBtn />
+                <AddToCartBtn stoke={5} />
               </td>
               <td>$999</td>
             </tr>
 
             <tr className="border-b">
               <td>
-                <img
-                  className="rounded-full  w-20 h-20 m-4"
-                  src={img}
-                  alt=""
-                  srcset=""
-                />
+                <img className="rounded-full  w-20 h-20 m-4" src={img} alt="" />
               </td>
               <td>Shose 1</td>
               <td>
-                <AddToCartBtn />
+                <AddToCartBtn stoke={5} />
               </td>
               <td>$999</td>
             </tr>
 
             <tr className="border-b">
               <td>
-                <img
-                  className="rounded-full  w-20 h-20 m-4"
-                  src={img}
-                  alt=""
-                  srcset=""
-                />
+                <img className="rounded-full  w-20 h-20 m-4" src={img} alt="" />
               </td>
               <td>Shose 1</td>
               <td>
-                <AddToCartBtn />
+                <AddToCartBtn stoke={5} />
               </td>
               <td>$999</td>
             </tr>
