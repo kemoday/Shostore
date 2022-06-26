@@ -37,11 +37,11 @@ export const AddProductPage = () => {
           <ProgressBar step={step} setStep={setStep} />
           <Switch>
             <Route
-              path="/product/add/step-one"
+              path="/product/add/step/1"
               render={() => <StepOne handleChange={handleChange} data={data} />}
             />
-            <Route path="/product/add/step-two" component={StepTwo} />
-            <Route path="/product/add/step-three" component={StepThree} />
+            <Route path="/product/add/step/2" component={StepTwo} />
+            <Route path="/product/add/step/3" component={StepThree} />
           </Switch>
         </div>
       </div>

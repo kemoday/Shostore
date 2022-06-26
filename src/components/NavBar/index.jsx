@@ -29,7 +29,7 @@ export const NavBar = () => {
               <li>
                 <Link
                   className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
-                  to="/product/add/step-one"
+                  to="/product/add/step/1"
                 >
                   Add Product
                 </Link>
