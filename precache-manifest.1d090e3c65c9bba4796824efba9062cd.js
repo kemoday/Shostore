@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49405317c0762f080820f273c097771f",
+    "revision": "8c2050fafaa1e3f7f804887df4d2bab4",
     "url": "/Shostore/index.html"
   },
   {
-    "revision": "f3d06ed162b61951fd37",
+    "revision": "efe9592b2e781dc33c87",
     "url": "/Shostore/static/css/main.65478444.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Shostore/static/js/2.d80f7286.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f3d06ed162b61951fd37",
-    "url": "/Shostore/static/js/main.0504b567.chunk.js"
+    "revision": "efe9592b2e781dc33c87",
+    "url": "/Shostore/static/js/main.ed0dd7f0.chunk.js"
   },
   {
     "revision": "5a018fbb14736b7769ca",

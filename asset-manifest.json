@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Shostore/static/css/main.65478444.chunk.css",
-    "main.js": "/Shostore/static/js/main.0504b567.chunk.js",
-    "main.js.map": "/Shostore/static/js/main.0504b567.chunk.js.map",
+    "main.js": "/Shostore/static/js/main.ed0dd7f0.chunk.js",
+    "main.js.map": "/Shostore/static/js/main.ed0dd7f0.chunk.js.map",
     "runtime-main.js": "/Shostore/static/js/runtime-main.7f318eb5.js",
     "runtime-main.js.map": "/Shostore/static/js/runtime-main.7f318eb5.js.map",
     "static/js/2.d80f7286.chunk.js": "/Shostore/static/js/2.d80f7286.chunk.js",
     "static/js/2.d80f7286.chunk.js.map": "/Shostore/static/js/2.d80f7286.chunk.js.map",
     "index.html": "/Shostore/index.html",
-    "precache-manifest.1591f92c174c463250e40c4b37256a86.js": "/Shostore/precache-manifest.1591f92c174c463250e40c4b37256a86.js",
+    "precache-manifest.1d090e3c65c9bba4796824efba9062cd.js": "/Shostore/precache-manifest.1d090e3c65c9bba4796824efba9062cd.js",
     "service-worker.js": "/Shostore/service-worker.js",
     "static/css/main.65478444.chunk.css.map": "/Shostore/static/css/main.65478444.chunk.css.map",
     "static/js/2.d80f7286.chunk.js.LICENSE.txt": "/Shostore/static/js/2.d80f7286.chunk.js.LICENSE.txt",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.7f318eb5.js",
     "static/js/2.d80f7286.chunk.js",
     "static/css/main.65478444.chunk.css",
-    "static/js/main.0504b567.chunk.js"
+    "static/js/main.ed0dd7f0.chunk.js"
   ]
 }
