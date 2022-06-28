@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AddToCartBtn } from "./../../components/AddToCartBtn";
+import { FavouriteBtn } from "../../components/FavouriteBtn";
 import img1 from "../../assets/vapor-cage-t(1).png";
 import img2 from "../../assets/vapor-cage-t(2).png";
 import img3 from "../../assets/vapor-cage-t(3).png";
 import img4 from "../../assets/vapor-cage-t(4).png";
 import img5 from "../../assets/vapor-cage-t(5).png";
 import img6 from "../../assets/vapor-cage-t(6).png";
-import { FavouriteBtn } from "../../components/FavouriteBtn";
 
 export const ProductPage = () => {
   const fimg = useRef();
