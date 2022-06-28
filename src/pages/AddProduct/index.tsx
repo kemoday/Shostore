@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import { InnerContaner } from "../../components/InnerContaner";
 import { ProgressBar } from "./ProgressBar";
+import { StepFour } from "./StepFour";
 import { StepOne } from "./StepOne";
 import { StepThree } from "./StepThree";
 import { StepTwo } from "./StepTwo";
@@ -42,6 +43,7 @@ export const AddProductPage = () => {
             />
             <Route path="/product/add/step/2" component={StepTwo} />
             <Route path="/product/add/step/3" component={StepThree} />
+            <Route path="/product/add/step/4" component={StepFour} />
           </Switch>
         </div>
       </div>
