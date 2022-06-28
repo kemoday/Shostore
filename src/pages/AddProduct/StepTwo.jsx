@@ -10,7 +10,7 @@ export const StepTwo = () => {
   };
 
   return (
-    <section className="p-4">
+    <section className="">
       <h2 className=" text-gray-700 font-bold my-2 text-2xl">
         Upload product's images
       </h2>
